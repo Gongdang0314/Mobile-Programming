@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#FFF8E1">
+
+    <TextView
+        android:id="@+id/tvTodayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 운동 체크리스트 📝"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        android:layout_marginBottom="20dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWorkoutList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오늘의 운동 메모를 입력하세요"
+        android:background="#FFFFFF"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#4E342E"
+        android:textColorHint="#9E9E9E" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="운동 기록 저장하기 💾"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textColor="#4E342E"
+        android:backgroundTint="#FFA726"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인 화면으로 돌아가기 ⬅"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textColor="#4E342E"
+        android:backgroundTint="#B38808" />
+
+</LinearLayout>
