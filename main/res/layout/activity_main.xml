@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_marginTop="20dp"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/maintitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnTodayRoutine"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFA726"
+                android:text="운동 루틴 생성하기🏋️‍♂️"
+                android:textColor="#4E342E"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnStats"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFB74D"
+                android:text="달력 보기📅"
+                android:textColor="#4E342E"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:backgroundTint="#FFB74D"
+                android:text="운동 기록 확인하기📊"
+                android:textColor="#4E342E"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

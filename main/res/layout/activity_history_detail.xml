@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:padding="6dp"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="홈으로 가기" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressRate"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#4CAF50"
+            android:backgroundTint="#DDDDDD"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:gravity="end"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvMemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메모 : "
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:background="#FFF3D6"
+            android:padding="14dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="6dp" />
+
+    </LinearLayout>
+</ScrollView>
